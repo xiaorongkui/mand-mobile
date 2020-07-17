@@ -2,7 +2,7 @@
   <div class="md-example-child md-example-child-scroll-view md-example-child-scroll-view-1">
     <md-scroll-view
       ref="scrollView"
-      :scrolling-x="false"
+      :scrolling-x="true"
       @refreshing="$_onRefresh"
     >
       <md-scroll-view-refresh
@@ -23,7 +23,8 @@
   </div>
 </template>
 
-<script>import {ScrollView, ScrollViewRefresh} from 'mand-mobile'
+<script>
+import {ScrollView, ScrollViewRefresh} from 'mand-mobile'
 
 export default {
   name: 'scroll-view-demo-0',
@@ -58,7 +59,8 @@ export default {
     },
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-example-child-scroll-view-1
