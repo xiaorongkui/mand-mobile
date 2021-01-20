@@ -11,7 +11,8 @@
   </div>
 </template>
 
-<script>import {Picker, Dialog} from 'mand-mobile'
+<script>
+import {Picker, Dialog} from 'mand-mobile'
 import simple from 'mand-mobile/components/picker/demo/data/simple'
 
 export default {
@@ -34,6 +35,7 @@ export default {
     }
   },
   mounted() {
+console.log(this.simple)
     window.PickerTrigger0 = () => {
       this.getColumnValues('picker')
     }
@@ -65,4 +67,5 @@ export default {
     },
   },
 }
-</script>
+
+</script>
